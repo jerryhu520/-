@@ -1,0 +1,343 @@
+/* 所有 */
+a{
+    text-decoration:none;
+    font-family:sans-serif;
+    color:rgb(51, 51, 51);
+}
+body{
+    font-family: sans-serif;
+    padding-top:80px;
+    background:rgb(248, 249, 248);
+}
+
+
+/* 顶部导航 */
+header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    background:white;
+    z-index:3;
+}
+nav{
+    height:80px;
+    width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+}
+nav a{
+    font-size:18px;
+}
+.nav_l,.nav_r{
+    display: flex;
+    line-height:80px;
+}
+/* 导航左 */
+.combo{
+    padding: 0 14px;
+    margin-left:10px;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    position: relative;
+}
+.combo:hover{
+    border-left:1px solid #d8d8d8;
+    border-right:1px solid #d8d8d8;
+}
+.combo>i{
+    content:'';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: all linear 0.2s;
+}
+.combo:hover i{
+    transform: rotate(180deg);
+}
+.welcome,.welcome+i{
+    cursor: default;
+}
+nav ol{
+    display: none;
+    position: absolute;
+    line-height:20px;
+    width:200px;
+    margin-left:-15px;
+    margin-top:-1px;
+    border:1px solid #d8d8d8;
+    background:white;
+}
+nav ol>li{
+    float: left;
+    margin:10px;
+    padding: 5px;
+}
+.combo:hover ol{
+    display: block;
+}
+nav ol>li:hover{
+    background:rgb(239, 66, 59);
+}
+nav ol>li:hover a{
+    color:white;
+}
+.nav_h>a{
+    display: block;
+    padding: 0 22px;
+}
+.nav_h>a:hover,.nav>a:focus{
+    background:rgb(239, 66, 59);
+}
+.nav_h:hover a{
+    color:white;
+}
+.nav_h_1{
+    margin-left:30px;
+}
+.nav_h_2>a{
+    background:rgb(239, 66, 59);
+    color:white;
+}
+/* 导航右 */
+.nav_r input[type="text"]{
+    padding-left:20px;
+    padding-right:40px;
+    box-sizing:border-box;
+    font-size: 14px;
+    background:rgb(250, 248, 250);
+    width:260px;
+    height:41px;
+    outline:0;
+    border:1px solid rgb(204, 204, 204);
+    border-radius:30px;
+}
+.nav_r input[type="submit"]{
+    background-image: url("../img/sprite_webpage.png");
+    width:40px;
+    height:40px;
+    outline:0;
+    border:0;
+    border-radius:50%;
+    vertical-align:middle;
+    margin-left:-45px;
+    margin-top: -.5px;
+    background-color: #ef4238;
+    cursor: pointer;
+}
+.nav_r>li>a>img{
+    width:40px;
+}
+.nav_r>li>ol{
+    width:135px;
+    margin-left:-15px;
+}
+
+/* 中间部分 */
+/* 灰色条 */
+.gray_block{
+    background:rgb(71, 70, 74);
+}
+.gray_block_con{
+    height:60px;
+    line-height:60px;
+    width:730px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    font-size:18px;
+}
+.gray_block_con>li{
+    cursor: pointer;
+    position: relative;
+}
+.gray_block_con>li>a{
+    color:rgb(153, 153, 153);
+}
+.gray_block_con>li:hover a{
+    color:rgb(239, 66, 59)!important;
+}
+.to_top{
+    content:'';
+    display: none;
+    border-bottom: 10px solid rgb(248, 249, 248);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 28px;
+}
+.gray_block_con>li:hover .to_top{
+    display: inline-block!important;
+}
+
+/* 电影列表 */
+.middle{
+    width:953px;
+    margin:65px auto 0;
+}
+.movie_list{
+    border-top:1px solid rgb(229, 229, 229);
+    padding-top:10px;
+}
+.movie_list>span{
+    width:90px;
+    font-size:16px;
+    color:rgb(162, 156, 153);
+    line-height:30px;
+}
+.movie_list,.movie_list_con{
+    display: flex;
+}
+.movie_list_con{
+    flex-wrap:wrap;
+    border-bottom:1px dashed rgb(229, 229, 229);
+}
+.movie_list_con>li{
+    margin-bottom: 15px;
+}
+.movie_list_con>li>a{
+    font-size:16px;
+    margin:10px;
+    padding:4px 8px;
+}
+.movie_list_con>li>a:hover{
+    background:rgb(239, 66, 59);
+    color:white;
+    border-radius: 30px;
+}
+.movie_list:nth-child(2)>span{
+    width:63px;
+}
+.movie_list:last-child>span{
+    width:51px;
+}
+.movie_list:last-child{
+    border-bottom:1px solid rgb(229, 229, 229);
+}
+.movie_list:last-child>.movie_list_con{
+    border-bottom:0;
+}
+/* 时间和规则 */
+.time_rule{
+    text-align:center;
+    font-size:14px;
+    line-height:25px;
+    margin-bottom: 36px;
+}
+.time_rule>p{
+    color:#999;
+    font-size: 12px;
+}
+.time_rule>p>span:last-child{
+    color: rgb(255, 180, 0);
+}
+.list_img_1{
+    display: flex;
+    margin-bottom: 30px;
+}
+.list_img_1>div:hover,.list_img_1>a:hover+div{
+    background: rgb(238, 238, 238);
+}
+.list_img_1>div{
+    padding-left:30px;
+    padding-right: 20px;
+    width:663px;
+    align-items:center;
+    display: flex;
+    line-height:35px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.list_img_1>div>div{
+    flex-grow:1;
+}
+.list_img_1>a>img{
+    width: 160px;
+    height: 220px;
+}
+.list_img_1>div>div>h3{
+    font-weight:normal;
+    font-size:26px;
+    margin-bottom: 15px;
+}
+.list_img_1>div>div>p{
+    font-size:16px;
+}
+.list_img_1>div>div>p:last-child{
+    color:rgb(153, 153, 156);
+}
+.list_img_1>div>p{
+    font-size:50px;
+    font-weight:bold;
+    font-style:italic;
+    color: rgb(255, 180, 0);
+}
+.list_img_1>div>p>span{
+    font-size:30px;
+}
+.list_img>.list_img_1>i{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    align-self:center;
+    background: #E2E2E2;
+    text-align:center;
+    line-height:50px;
+    color:rgb(153, 153, 153);
+    font-size:20px;
+    font-weight:bold;
+    margin-right:30px;
+}
+.list_img>.list_img_1:first-child>i{
+    background-image: url("../img/icon_04.png");
+
+    background-size:100%;
+}
+.list_img>.list_img_1:nth-child(2)>i,.list_img>.list_img_1:nth-child(3)>i{
+    background:rgb(255, 180, 0);
+    text-align:center;
+    line-height:50px;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+/* footer */
+footer{
+    width:100%;
+    margin-top:150px;
+    height:150px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgb(38, 36, 38);
+    text-align:center;
+    font-size:14px;
+    color:rgb(102, 102, 102);
+}
+footer>p{
+    margin:5px 0;
+}
+.cat>a>img{
+    width:72px;
+    height: 121px;
+    right: 0;
+    position:fixed;
+    animation: cat linear 3s infinite;
+
+}
+@keyframes cat{
+    0%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 200px;
+    }
+}

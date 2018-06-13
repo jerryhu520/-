@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>猫眼电影 - 一网打尽好电影</title>
+    <link href="./img/maoyan.png" rel="icon" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <nav>
+            <!-- 导航左 -->
+            <ul class="nav_l">
+                <li>
+                    <a href="./html/index.html">
+                        <img src="./img/logo_s.png" alt="">
+                    </a>
+                </li>
+                <li class="combo">
+                    <a href="">成都</a>
+                    <i></i>
+                    <ol>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">广州</a>
+                        </li>
+                        <li>
+                            <a href="">长沙</a>
+                        </li>
+                        <li>
+                            <a href="">北京</a>
+                        </li>
+                        <li>
+                            <a href="">上海</a>
+                        </li>
+                        <li>
+                            <a href="">武汉</a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="nav_h nav_h_1">
+                    <a href="./index.html">首页</a>
+                </li>
+                <li class="nav_h">
+                    <a href="./modules/movie/movie.html">电影</a>
+                </li>
+                <li class="nav_h">
+                    <a href="./modules/list/list.html">榜单</a>
+                </li>
+                <li class="nav_h">
+                    <a href="">热点</a>
+                </li>
+            </ul>
+            <!-- 导航右 -->
+            <ul class="nav_r">
+                <li>
+                    <form action="">
+                        <input type="text" placeholder="找影视剧、影人、影院" />
+                        <input type="submit" name="" value="">
+                    </form>
+                </li>
+                <li class="combo">
+                    <a href="">
+                        <img id="head_img" src="./img/avatar.png" alt="" style="border-radius: 50%">
+                    </a>
+                    <span class="welcome"></span>
+                    <i></i>
+                    <ol id="a_box">
+                        <li id="first_a">
+                            <a href="./modules/login/login.html">登录</a>
+                        </li>
+                        <li id="second_a">
+                            <a href="./modules/register/register.html">注册</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <span class="direct" id="to_right"></span>
+        <a href="" id="banner"></a>
+        <span class="direct" id="to_left"></span>
+        <ul id="circleBox">
+            <li data-list="0" class="circle"></li>
+            <li data-list="1" class="circle"></li>
+            <li data-list="2" class="circle"></li>
+            <li data-list="3" class="circle"></li>
+            <li data-list="4" class="circle"></li>
+            <li data-list="4" class="circle"></li>
+        </ul>
+    </div>
+    <!-- 中间div区域 -->
+    <div class="middle">
+        <!-- 左边电影图片 -->
+        <article>
+            <!-- 正在热映 -->
+            <section class="hot">
+                <div class="hot_h">
+                    <h2>正在热映（
+                        <span id="beingFilm_nums"></span>部）</h2>
+                    <a href="">全部</a>
+                </div>
+                <div class="hot_img" id="hot_img">
+                    <!-- <figure class="blue_box"> -->
+                    <!-- <a href="./modules/details/details.html">
+                            <img src="" alt="">
+                            <i class="blue_label_1 blue_label"></i>
+                            <p class="movie_name">
+                                <span></span>
+                                <span></span>
+                            </p>
+                        </a>
+                        <figcaption>
+                            <a href="">购票</a>
+                        </figcaption>
+                    </figure> -->
+                </div>
+            </section>
+            <!-- 即将上映 -->
+            <section class="hot future">
+                <div class="hot_h future_h">
+                    <h2>即将上映（
+                        <span id="comingFilm_nums"></span>部）</h2>
+                    <a href="">全部</a>
+                </div>
+                <div class="hot_img future_img" id="future_img">
+                    <!-- <figure class="blue_box">
+                        <a href="">
+                            <img src="./img/48ca0035795cf431bb0b4971f37f49e41862020.jpg" alt="">
+                            <i class="blue_label_1 blue_label"></i>
+                            <span class="movie_name">十万个冷笑话</span>
+                        </a>
+                        <figcaption>
+                            <span>134人想看</span>
+                            <div>
+                                <a href="">预告片</a>
+                                <i></i>
+                                <a href="">预&nbsp;&nbsp;售</a>
+                            </div>
+                            <span>10月26日上映</span>
+                        </figcaption>
+                    </figure> -->
+                </div>
+            </section>
+            <!-- 热播电影 -->
+            <section class="hot_movie">
+                <div class="hot_movie_h hot_h">
+                    <div>
+                        <h2>热播电影</h2>
+                        <a href="">爱情</a>
+                        <a href="">喜剧</a>
+                        <a href="">动作</a>
+                        <a href="">恐怖</a>
+                        <a href="">动画</a>
+                    </div>
+                    <a href="">全部</a>
+                </div>
+                <div class="hot_movie_img" id="hot_movie_img">
+                    <!-- <a class="blue_box" href="">
+                        <img src="./img/af6b8d2473c6c7adc3784f1a26e3c16f2323292.jpg" alt="" />
+                        <i class="blue_label blue_label_1"></i>
+                        <p class="movie_name_b">
+                            <span>美人鱼</span>
+                            <span>9.1</span>
+                        </p>
+                    </a> -->
+                </div>
+            </section>
+        </article>
+        <!-- 右边列表 -->
+        <aside>
+            <!-- 近期票房 -->
+            <div class="ticket">
+                <h2>近期票房</h2>
+                <div class="ticket_t" id="ticket_t">
+                    <!-- <a href="./modules/details/details.html">
+                        <img src="" alt="">
+                        <i class="cup_1 cup"></i>
+                    </a>
+                    <a href="./modules/details/details.html">
+                        <h3></h3>
+                        <span></span>
+                    </a> -->
+                </div>
+                <ul class="ticket_list" id="ticket_list">
+                    <!-- <li>
+                        <a href="">
+                            <div>
+                                <span>2</span>
+                                <h3>惊天破</h3>
+                            </div>
+                            <span>2023.35万</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- 今日大盘 -->
+            <div class="grail">
+                <div>
+                    <h3>今日大盘</h3>
+                </div>
+                <div>
+                    <div class="money">
+                        <p>
+                            <span>1.03</span>
+                            <span>亿</span>
+                        </p>
+                        <a href="">查看更多</a>
+                    </div>
+                    <div class="time">
+                        <span id="time"></span>
+                        <span>猫眼专业版实时票房数据</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 最受期待 -->
+            <div class="hope_movie">
+                <div class="hope_movie_h">
+                    <h2>最受期待</h2>
+                    <a href="">查看完整榜单</a>
+                </div>
+                <div class="hope_movie_top1" id="hope_movie_top1">
+                    <!-- <a href="">
+                        <img src="./img/huan.jpg" alt="">
+                        <i class="cup cup_2"></i>
+                    </a>
+                    <a href="">
+                        <h3>环太平洋：雷霆再起</h3>
+                        <span>上映时间：2018</span>
+                        <span class="want">2121846人想看</span>
+                    </a> -->
+                </div>
+                <div class="hope_movie_top2_3" id="hope_movie_top2_3">
+                    <!-- <a href="">
+                        <img src="./img/ca9160bfc3d892a94d76ad0980c762ea34931.jpg" alt="">
+                        <h3>蚁人</h3>
+                        <span class="want">152788人想看</span>
+                        <i class="cup_3">2</i>
+                    </a>
+                    <a href="">
+                        <img src="./img/cbf15aba0ca3d31054ec2ce27a1817ac74777.jpg" alt="">
+                        <h3>你的名字</h3>
+                        <span class="want">169921人想看</span>
+                        <i class="cup_4">3</i>
+                    </a> -->
+                </div>
+                <ul class="ticket_list hope_movie_list" id="hope_movie_list">
+                    <!-- <li>
+                        <a href="">
+                            <div>
+                                <span>4</span>
+                                <h3>机器之血</h3>
+                            </div>
+                            <span>53713人想看</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- TOP 100 -->
+            <div class="ticket top_100 hope_movie">
+                <div class="hope_movie_h">
+                    <h2>TOP 100</h2>
+                    <a href="">查看完整榜单</a>
+                </div>
+                <div class="ticket_t" id="ticket_b">
+                    <!-- <a href="">
+                        <img src="./img/2d52f6932ca2f47871ca27801c71e4cf98763 (2).jpg" alt="">
+                        <i class="cup cup_5"></i>
+                    </a>
+                    <a href="">
+                        <h3>霸王别姬</h3>
+                        <span>9.6分</span>
+                    </a> -->
+                </div>
+                <ul class="ticket_list" id="ticket_b_list">
+                    <!-- <li>
+                        <a href="">
+                            <div>
+                                <span>2</span>
+                                <h3>肖申克的救赎</h3>
+                            </div>
+                            <span>9.5分</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <!-- footer部分 -->
+    <footer>
+        <p>&copy; 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489号-1 京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+        <p>北京猫眼文化传媒有限公司</p>
+    </footer>
+    <div class="cat">
+        <a href="#">
+            <img src="./img/cat.png" alt="">
+        </a>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $.get('http://127.0.0.1:3000/test', function (data) {
+            console.log(data)
+        })
+    </script>
+</body>
+
+</html>

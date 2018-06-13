@@ -1,0 +1,159 @@
+/* 所有 */
+a{
+    text-decoration:none;
+    font-family:sans-serif;
+    color:rgb(51, 51, 51);
+}
+body{
+    font-family: sans-serif;
+    color:rgb(51,51,51);
+    font-size: 16px;
+}
+header{
+    border-bottom:2px solid rgb(232,55,60);
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+form{
+    width:685px;
+    margin: auto;
+}
+header>div{
+    width: 880px;
+    margin:auto;
+}
+.text>input{
+    height: 36px;
+    width:260px;
+    border:1px solid rgb(170, 170, 170);
+    box-sizing:border-box;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 16px;
+    border-radius:2px;
+    margin-left:5px;
+}
+.text>input:focus{
+    border:1px solid #f76120;
+}
+.free>input{
+    margin-left:90px;
+    margin-bottom: 16px;
+    padding: 0 10px;
+    color:rgb(51,51,51);
+}
+.free>input:hover,.agree>input:hover{
+    cursor: pointer;
+}
+.pwd>label{
+    margin-left:16px;
+}
+.pwd>p{
+    margin-left:90px;
+    margin-bottom:8px;
+    color:white;
+}
+.pwd>p>span{
+    background: rgb(230,230,230);
+    padding:2px 33px;
+    font-size:14px;
+    margin-right: 6px;
+    border-radius:2px;
+    transition: all linear 1s;
+}
+
+.pwd>input{
+    margin-bottom:8px;
+}
+.pwd_2>label{
+    margin-left: 16px;
+}
+label{
+    color:rgb(51,51,51);
+}
+.mobile>label{
+    margin-left:32px;
+}
+.mobile>span{
+    font-size:14px;
+    color:rgb(153,153,153);
+}
+input[type="text"],input[type="password"]{
+    margin-right: 10px;
+}
+.agree{
+    margin-left:90px;
+    margin-bottom: 36px;
+}
+.agree>input{
+    outline: 0;
+    height:35px;
+    color:white;
+    background:rgb(235,66,71);
+    font-size:16px;
+    font-weight:bold;
+    border:0;
+    padding: 0 25px;
+    border-radius:3px;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ec454a),color-stop(100%,#e02025));
+    background: -webkit-linear-gradient(top,#ec454a 0,#e02025 100%);
+    background: linear-gradient(to bottom,#ec454a 0,#e02025 100%);
+}
+.agree>p{
+    margin-top: 10px;
+}
+.agree>p>a{
+    margin-left: 5px;
+    color:rgb(236,69,74);
+    font-size:14px;
+}
+.agree>p>a:hover{
+    text-decoration:underline;
+}
+footer{
+    font-size:12px;
+    padding-top:24px;
+    border-top: 1px solid rgb(238,238,238);
+}
+footer>div{
+    width:390px;
+    margin:auto;
+}
+footer>div>p,footer>div>p>a{
+    color: #999;
+}
+footer>div>p>a:hover{
+    color:rgb(235,66,71);
+    text-decoration:underline;
+}
+.cat>a>img{
+    width:72px;
+    height: 121px;
+    right: 0;
+    position:fixed;
+    animation: cat linear 3s infinite;
+
+}
+@keyframes cat{
+    0%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 200px;
+    }
+}
+#login{
+    font-size: 14px;
+    color: #e02025;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+#login:hover{
+    text-decoration: underline;
+}
+input+span{
+    font-size: 14px;
+}

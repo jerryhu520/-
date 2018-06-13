@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>登录 | 猫眼电影</title>
+    <link href="../../img/maoyan.png" rel="icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/login.css">
+</head>
+
+<body>
+    <!-- 头部logo -->
+    <header>
+        <a href="../../index.html">
+            <img src="../../img/logo.png" alt="">
+        </a>
+    </header>
+    <!-- 中间div -->
+    <div class="middle">
+        <img src="../../img/login.png" alt="">
+        <div class="login_panel">
+            <div class="login_t">
+                <span>账号登陆</span>
+                <a href="">手机动态码登录</a>
+            </div>
+            <p id='error_info'>
+                <span>*</span> 您输入的密码和账户名不匹配，是否
+                <a href="#">忘记密码</a> 或
+                <a href="#">忘记会员名</a>
+            </p>
+            <form id="form" action="/login/log" method="POST">
+                <input type="text" id="user_phone" name="user_phone" placeholder="手机号/用户名/邮箱">
+                <i></i>
+                <input type="password" id="user_pwd" name="user_pwd" placeholder="密码">
+                <i></i>
+                <div class="forget">
+                    <input type="checkbox" name="" value="" id="login">
+                    <label for="login">7天内自动登录</label>
+                    <a href="">忘记密码？</a>
+                </div>
+                <input type="submit" name="" value="登录">
+                <div class="register">
+                    <span>还没有账号？</span>
+                    <a href="../register/register.html">免费注册</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <p>©2018
+            <a href="">美团网团购</a> meituan.com
+            <a href="">京ICP证070791号</a> 京公网安备11010502025545号 电子公告服务规则</p>
+    </footer>
+    <div class="cat">
+        <a href="#">
+            <img src="../../img/cat.png" alt="">
+        </a>
+    </div>
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="./login.js"></script>
+</body>
+
+</html>

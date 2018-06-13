@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>正在热映 - 猫眼电影 - 一网打尽好电影</title>
+    <link href="../../img/maoyan.png" rel="icon" />
+    <link href="../../img/maoyan.png" rel="icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/movie.css">
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <nav>
+            <!-- 导航左 -->
+            <ul class="nav_l">
+                <li>
+                    <a href="../../index.html">
+                        <img src="../../img/logo_s.png" alt="">
+                    </a>
+                </li>
+                <li class="combo">
+                    <a href="">成都</a>
+                    <i></i>
+                    <ol>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">广州</a>
+                        </li>
+                        <li>
+                            <a href="">长沙</a>
+                        </li>
+                        <li>
+                            <a href="">北京</a>
+                        </li>
+                        <li>
+                            <a href="">上海</a>
+                        </li>
+                        <li>
+                            <a href="">武汉</a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="nav_h nav_h_1">
+                    <a href="../../index.html">首页</a>
+                </li>
+                <li class="nav_h nav_h_2">
+                    <a href="../movie/movie.html">电影</a>
+                </li>
+                <li class="nav_h">
+                    <a href="../list/list.html">榜单</a>
+                </li>
+                <li class="nav_h">
+                    <a href="">热点</a>
+                </li>
+            </ul>
+            <!-- 导航右 -->
+            <ul class="nav_r">
+                <li>
+                    <form action="">
+                        <input type="text" placeholder="找影视剧、影人、影院" />
+                        <input type="submit" name="" value="">
+                    </form>
+                </li>
+                <li class="combo">
+                    <a href="">
+                        <img id="head_img" src="../../img/avatar.png" alt="" style="border-radius: 50%">
+                    </a>
+                    <span class="welcome"></span>
+                    <i></i>
+                    <ol id="a_box">
+                        <li id="first_a">
+                            <a href="../login/login.html">登录</a>
+                        </li>
+                        <li id="second_a">
+                            <a href="../register/register.html">注册</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 中间部分 -->
+    <!-- 灰色条 -->
+    <div class="gray_block">
+        <ul class="gray_block_con">
+            <li>正在热映
+                <i class="to_top"></i>
+            </li>
+            <li>即将上映
+                <i class="to_top"></i>
+            </li>
+            <li>热播电影
+                <i class="to_top"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="middle">
+        <!-- 电影列表 -->
+        <div class="find_container">
+            <div class="movie_list">
+                <span>类型：</span>
+                <ul class="movie_list_con" id="find_type">
+                    <li>全部</li>
+                    <li>爱情</li>
+                    <li>喜剧</li>
+                    <li>动画</li>
+                    <li>剧情</li>
+                    <li>恐怖</li>
+                    <li>惊悚</li>
+                    <li>科幻</li>
+                    <li>动作</li>
+                    <li>悬疑</li>
+                    <li>犯罪</li>
+                    <li>冒险</li>
+                    <li>战争</li>
+                    <li>奇幻</li>
+                    <li>运动</li>
+                    <li>家庭</li>
+                    <li>古装</li>
+                    <li>武侠</li>
+                    <li>西部</li>
+                    <li>历史</li>
+                    <li>传记</li>
+                    <li>歌舞</li>
+                    <li>黑色电影</li>
+                    <li>短片</li>
+                    <li>纪录片</li>
+                    <li>其他</li>
+                </ul>
+            </div>
+            <div class="movie_list">
+                <span>区域：</span>
+                <ul class="movie_list_con" id="find_country">
+                    <li>全部</li>
+                    <li>大陆</li>
+                    <li>美国</li>
+                    <li>韩国</li>
+                    <li>日本</li>
+                    <li>中国香港</li>
+                    <li>中国台湾</li>
+                    <li>泰国</li>
+                    <li>印度</li>
+                    <li>法国</li>
+                    <li>英国</li>
+                    <li>俄罗斯</li>
+                    <li>意大利</li>
+                    <li>西班牙</li>
+                    <li>德国</li>
+                    <li>波兰</li>
+                    <li>澳大利亚</li>
+                    <li>伊朗</li>
+                    <li>其他</li>
+                </ul>
+            </div>
+            <div class="movie_list">
+                <span>年代：</span>
+                <ul class="movie_list_con" id="find_year">
+                    <li>全部</li>
+                    <li>2018</li>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2013</li>
+                    <li>2012</li>
+                    <li>2011</li>
+                    <li>2010</li>
+                    <li>2000-2010</li>
+                    <li>90年代</li>
+                    <li>80年代</li>
+                    <li>70年代</li>
+                    <li>更早</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 电影图片 -->
+        <div class="movie_img">
+            <div id="other_term">
+                <i class="white_point"></i>
+                <i class="red_point first_red_point"></i>
+                <span id="hot" data-index='0' for="hot">按热门排序</span>
+                <i class="white_point"></i>
+                <i class="red_point"></i>
+                <span data-index='1' for="time">按时间排序</span>
+                <i class="white_point hidden"></i>
+                <i class="red_point hidden"></i>
+                <span class="hidden" data-index='2' for="review">按评分排序</span>
+            </div>
+            <div class="movie_img_1">
+
+            </div>
+        </div>
+        <!-- 页码 -->
+        <ul class="pages">
+            <li class="to_up" style="visibility:hidden">上一页</li>
+            <li class="first_page click_page">1</li>
+            <li class="click_page creat_page" style="display: none"></li>
+            <li class="click_page creat_page" style="display: none"></li>
+            <li class="click_page creat_page" style="display: none"></li>
+            <li class="click_page creat_page" style="display: none"></li>
+            <li class="page_point" style="cursor: text;color: gray;display: none">…</li>
+            <li class="click_page creat_page" style="display: none"></li>
+            <li class="to_down">下一页</li>
+        </ul>
+    </div>
+    <!-- footer部分 -->
+    <footer>
+        <!-- <input style="width: 500px;height: 300px;" type="text" name="" id="text">
+        <input value="转换" style="width: 200px;height: 200px;" type="button" name="" id="sub"> -->
+        <p>&copy; 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489号-1 京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+        <p>北京猫眼文化传媒有限公司</p>
+    </footer>
+    <div class="cat">
+        <a href="#">
+            <img src="../../img/cat.png" alt="">
+        </a>
+    </div>
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="./movie.js"></script>
+</body>
+
+</html>

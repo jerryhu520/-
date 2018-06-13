@@ -1,0 +1,787 @@
+/* 所有 */
+a{
+    text-decoration:none;
+    font-family:sans-serif;
+    color:rgb(51, 51, 51);
+}
+body{
+    font-family: sans-serif;
+    padding-top:80px;
+    background:rgb(248, 249, 248);
+}
+
+
+/* 顶部导航 */
+header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    background:white;
+    z-index:3;
+}
+nav{
+    height:80px;
+    width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+}
+nav a{
+    font-size:18px;
+}
+.nav_l,.nav_r{
+    display: flex;
+    line-height:80px;
+}
+/* 导航左 */
+.combo{
+    padding: 0 14px;
+    margin-left:10px;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    position: relative;
+}
+.combo:hover{
+    cursor: pointer;
+    border-left:1px solid #d8d8d8;
+    border-right:1px solid #d8d8d8;
+}
+.combo>i{
+    content:'';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: all linear 0.2s;
+}
+.combo:hover i{
+    transform: rotate(180deg);
+}
+.welcome,.welcome+i{
+    font-size: 14px;
+    margin-left: 2px;
+    cursor: default;
+}
+nav ol{
+    cursor: default;
+    display: none;
+    position: absolute;
+    line-height:20px;
+    width:200px;
+    margin-left:-15px;
+    margin-top:-1px;
+    border:1px solid #d8d8d8;
+    background:white;
+}
+nav ol>li{
+    float: left;
+    margin:10px;
+    padding: 5px;
+}
+.combo:hover ol{
+    display: block;
+}
+nav ol>li:hover{
+    background:rgb(239, 66, 59);
+}
+nav ol>li:hover a{
+    color:white;
+}
+.nav_h>a{
+    display: block;
+    padding: 0 22px;
+}
+.nav_h>a:hover,.nav>a:focus{
+    background:rgb(239, 66, 59);
+}
+.nav_h:hover a{
+    color:white;
+}
+.nav_h_1{
+    margin-left:30px;
+}
+.nav_h_1>a{
+    background:rgb(239, 66, 59);
+    color:white;
+}
+/* 导航右 */
+.nav_r input[type="text"]{
+    padding-left:20px;
+    padding-right:40px;
+    box-sizing:border-box;
+    font-size: 14px;
+    background:rgb(250, 248, 250);
+    width:260px;
+    height:41px;
+    outline:0;
+    border:1px solid rgb(204, 204, 204);
+    border-radius:30px;
+}
+.nav_r input[type="submit"]{
+    background-image: url("../img/sprite_webpage.png");
+    width:40px;
+    height:40px;
+    outline:0;
+    border:0;
+    border-radius:50%;
+    vertical-align:middle;
+    margin-left:-45px;
+    margin-top:.5px;
+    background-color: #ef4238;
+    cursor: pointer;
+}
+.nav_r>li>a>img{
+    width:40px;
+}
+.nav_r>li>ol{
+    width:135px;
+    margin-left:-15px;
+}
+
+/* 轮播图 */
+.banner{
+    width:100%;
+    margin:0 auto 70px;
+    position: relative;
+}
+#banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    height: 450px;
+}
+.six_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    width:1112px;
+    height:120px;
+    margin:auto;
+    background:white;
+    position: relative;
+    top: -60px;
+    border:1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+.six_img>div>a{
+    margin: 0 2px;
+}
+.six_img>div>a>img{
+    width: 160px;
+    height: 109px;
+}
+.six_img>span>img{
+    cursor: pointer;
+    width:16px;
+    margin:15px;
+}
+#six_news>a:hover img{
+    outline:3px solid rgb(239, 66, 59);
+    transition:all linear 0.1s;
+    transform: scale(1.08);
+}
+.direct{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background: url("../img/banner/shutter_prevBtn.png")
+}
+.direct:hover{
+    background: url("../img/banner/shutter_prevBtn.png")!important;
+    background-position:0 -49px!important;
+}
+#to_right{
+    transform: rotate(180deg);
+    right: 10px;
+    top:calc(50% - 25px);
+    cursor: pointer;
+}
+#to_left{
+    left: 10px;
+    top:calc(50% - 25px);
+    cursor: pointer;
+}
+#circleBox{
+    position: absolute;
+    display:flex;
+    bottom: 20px;
+    left:calc(50% - 70px);
+}
+.circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    margin: 0 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #eee;
+}
+.circle:hover{
+    background: rgb(239, 66, 59) !important;
+}
+/* 中间div区域 */
+.middle{
+    width:1180px;
+    margin:0 auto 0;
+    display: flex;
+    justify-content:space-between;
+}
+article{
+    width:730px;
+}
+aside{
+    width:360px;
+}
+/* 左边电影图片 */
+/* 正在热映 */
+.hot{
+    margin-bottom:50px;
+}
+.hot_h{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    align-items: baseline;
+}
+h2,.hot_h>a{
+    color:rgb(239, 66, 59);
+}
+h2{
+    font-weight:normal;
+    font-size:24px;
+}
+.hot_h>a{
+    font-size:14px;
+}
+.hot_h>a:hover,.money>a:hover{
+    color:rgb(45, 152, 243);
+}
+.hot_h>a:hover::after,.money>a:hover::after{
+    background-image: url("../img/icon13.png");
+}
+.hot_h>a::after,.money>a::after,.hope_movie_h>a::after{
+    content:'';
+    display: inline-block;
+    width:8px;
+    height:16px;
+    background-image: url("../img/icon12.png");
+    vertical-align:middle;
+    margin-left:4px;
+}
+.hope_movie_h>a:hover{
+    text-decoration:underline;
+}
+.hot_img{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.hot_img>figure{
+    cursor: pointer;
+    border:1px solid rgb(239, 239, 239);
+    margin-bottom: 30px;
+    background:white;
+}
+.hot_img>figure>a>img{
+    width: 160px;
+    height: 220px;
+}
+.hot_img>figure:hover figcaption{
+    background:rgb(239, 66, 59);
+}
+.hot_img>figure:hover figcaption>a{
+    color:white;
+}
+.hot_img>figure:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    position: relative;
+    top:-1px;
+}
+.hot_img>figure>figcaption{
+    text-align:center;
+    padding:10px 0;
+}
+.hot_img>figure>figcaption>a{
+    color:rgb(239, 66, 59);
+    font-size:14px;
+}
+.blue_box{
+    position: relative;
+}
+.blue_label{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height:24px;
+    width:68px;
+    top: -93px;
+    left:-3px;
+}
+.blue_label_1{
+    background-image: url("../img/2dimax.png");
+}
+#hot_movie_img>a:nth-child(even)>i,#future_img>figure:nth-child(odd)>a>i,
+#hot_img>figure:nth-child(even)>a>i{
+    display: none;
+}
+#hot_img>figure:last-child>a>i{
+    display: inline-block;
+}
+.blue_label_2{
+    width:30px;
+    background-image: url("../img/3d.png");
+}
+.blue_label_3{
+    background-image: url("../img/3dmax.png");
+}
+.hot_img>figure>a{
+    position: relative;
+}
+.movie_name{
+    display: flex;
+    justify-content:space-between;
+    width:160px;
+    height:40px;
+    color:white;
+    position: absolute;
+    background-image: url("../img/shadow.png");
+    bottom:-102px;
+    left:0;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top:10px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+.movie_name>span:last-child,.movie_name_b>span:last-child{
+    font-style:italic;
+    font-size:14px;
+    color:rgb(255, 180, 0);
+}
+.movie_name>span:last-child{
+    font-size:14px;
+}
+.movie_name>span:last-child::first-letter,.movie_name_b>span:last-child::first-letter{
+    font-size:18px;
+}
+/* 即将上映 */
+.future>.future_h>h2,.future>.future_h>a{
+    color:rgb(45, 152, 243);
+}
+.future_img>figure{
+    background:rgb(248, 249, 248);
+    margin-bottom:60px;
+    position: relative;
+}
+.future_img>figure>figcaption{
+    text-align:left;
+    position: relative;
+    padding-bottom:0;
+}
+.future_img>figure:hover figcaption{
+    background:rgb(249, 249, 249);
+}
+.future_img>figure>figcaption>span:first-of-type{
+    display: block;
+    height:28px;
+    line-height:22px;
+    font-size:14px;
+    color:rgb(255, 180, 31);
+    margin:0;
+    margin-left:8px;
+}
+.future_img>figure>figcaption>div{
+    display: flex;
+    background:white;
+}
+.future_img>figure>figcaption>div>a{
+    display: block;
+    height:35px;
+    line-height:35px;
+    color:rgb(153, 153, 153);
+    font-size:14px;
+    
+}
+.future_img>figure>figcaption>div>a:first-of-type{
+    padding: 0 20px;
+}
+.future_img>figure>figcaption>div>a:last-of-type{
+    padding: 0 20px;
+    width: 38px;
+    color:rgb(45, 152, 243);
+}
+.future_img>figure>figcaption>div>i{
+    border-right: 1px dotted #e5e5e5;
+}
+
+.future_img>figure>figcaption>div>a:hover{
+        background: rgb(45, 152, 243);
+        color:white;
+}
+.future_img>figure>figcaption>span:last-of-type{
+    position: absolute;
+    font-size:14px;
+    color:rgb(153, 153, 153);
+    left:30px;
+    bottom:-30px;
+}
+#future_img>figure{
+    cursor: default;
+}
+#future_img figcaption>span:first-child{
+    cursor: text;
+}
+.future_h>a:hover{
+    color:rgb(239, 66, 59);;
+}
+.future_h>a::after{
+    background-image: url("../img/icon13.png");
+}
+.future_h>a:hover::after{
+    background-image: url("../img/icon12.png");
+}
+/* .future_img>figure:first-child>a::after{
+    content:"但丁密码";
+    display: inline-block;
+    position: absolute;
+    top:0;
+} */
+/* 热播电影 */
+.hot_movie_h{
+    margin-top: 58px;
+    margin-bottom:25px;
+}
+.hot_movie_h>div{
+    display: flex;
+    align-items:baseline;
+}
+.hot_movie_h>div>h2{
+    color:rgb(239, 66, 59);
+    font-weight:normal;
+    font-size:24px;
+}
+.hot_movie_h>div>a{
+    margin-left:18px;
+    color:black;
+    font-size:16px;
+}
+.hot_movie_h>div>a:hover{
+    color:rgb(239, 66, 59);
+}
+.hot_movie_img{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.hot_movie_img>a{
+    margin-bottom: 30px;
+}
+.hot_movie_img>a>img{
+    border:1px solid rgb(204, 204, 204);
+}
+.hot_movie_img>a:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    position: relative;
+    top:-1px;
+}
+.hot_movie_img>a>i{
+    top: 4px;
+}
+.hot_movie_img>a{
+    position: relative;
+}
+.movie_name_b{
+    display: flex;
+    justify-content: space-between;
+    width:160px;
+    height:40px;
+    color:white;
+    position: absolute;
+    background: url("../img/shadow.png") repeat-x;
+    bottom:1px;
+    left:0;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+.hot_movie_img>a:first-child>.movie_name_b{
+    width:351px;
+}
+#hot_movie_img>a>img{
+    width: 160px;
+    height: 220px;
+}
+#hot_movie_img>a:first-child>img{
+    width: 350px;
+    height: 220px;
+}
+/* 右边列表 */
+/* 今日票房 */
+#ticket_t>a>img{
+    width: 120px;
+    height: 78px;
+    clip: auto;
+}
+
+.ticket_t{
+    display: flex;
+    margin-top:18px;
+    border:1px solid rgb(239, 239, 239);
+}
+.ticket_t:hover,.ticket_list>li:hover{
+    background:rgb(238, 238, 238);
+}
+.ticket_t>a:last-child{
+    margin-left:10px;
+    margin-top: 18px;
+    flex-grow:1;
+}
+.ticket_t>a>h3{
+    font-size:16px;
+    font-weight:normal;
+}
+.ticket_t>a>span{
+    color:rgb(239, 66, 59);
+    font-size:14px;
+    line-height:40px;
+}
+.ticket_t>a,.hope_movie_top1>a,.hope_movie_top2_3>a,.ticket_t>a{
+    position: relative;
+}
+.cup{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    width:21px;
+    height:24px;
+    background-image: url("../img/sprite_webpage.png");
+    top: 0;
+    left:0;
+}
+.cup_1{
+    background-position:-30px -83px;
+}
+.cup_2{
+    background-position:0 -83px;
+}
+.cup_5{
+    background-position:-57px -84px;
+}
+.ticket_list>li{
+    padding:4.4px 5px;
+}
+.ticket_list>li>a,.ticket_list>li>a>div{
+    display: flex;
+    align-items: baseline;
+}
+.ticket_list>li>a{
+    justify-content:space-between;
+}
+.ticket_list>li>a>div>span{
+    color:rgb(153,153,153);
+    font-size:24px;
+    font-style:italic;
+}
+.ticket_list>li:first-child>a>div>span,.ticket_list>li:nth-child(2)>a>div>span{
+    color:rgb(239, 66, 59);
+}
+.ticket_list>li>a>div>h3{
+    font-weight:normal;
+    margin-left:20px;
+    font-size:16px;
+}
+.ticket_list>li:last-child>a>div>h3 {
+    margin-left: 6px;
+}
+.ticket_list>li>a>span{
+    color:rgb(239, 66, 59);
+    font-size:14px;
+}
+/* 今日大盘 */
+.grail{
+    margin-top:21px;
+    display: flex;
+    border:1px solid rgb(239, 239, 239);
+    background:rgb(253, 253, 253);
+    padding-right:15px;
+}
+.grail>div:last-child{
+    width: 308px;
+}
+.grail>div>h3{
+    width:17px;
+    padding: 9px;
+    background:rgb(239, 66, 59);
+    color:white;
+    font-size:16px;
+    font-weight:normal;
+    margin-right:15px;
+}
+.money{
+    margin-top: 25px;
+    display: flex;
+    justify-content:space-between;
+    align-items:baseline;
+}
+.money>p>span:first-child{
+    color:rgb(239, 66, 59);
+    font-size:28px;
+    font-weight:bold;
+}
+.money>p>span:last-child,.money>a{
+    color:rgb(239, 66, 59);
+    font-size:14px;
+}
+.time{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    font-size:14px;
+    color:rgb(159, 159, 159);
+}
+/* 最受期待 */
+.hope_movie{
+    margin-top:80px;
+}
+.hope_movie_h{
+    display: flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-bottom:20px;
+}
+.hope_movie_h>h2{
+    color:rgb(255, 180, 0);
+}
+.hope_movie_h>a{
+    font-size:14px;
+    color:rgb(255, 180, 0);
+}
+.hope_movie_top1{
+    display: flex;
+    border:1px solid rgb(239, 239, 239);
+}
+.hope_movie_top1>a:last-child{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:12px;
+}
+.hope_movie h3{
+    font-size:16px;
+    color:black;
+    font-weight:normal;
+}
+.hope_movie_top1>a>span:first-of-type{
+    font-size:14px;
+    color:rgb(153, 153, 153);
+    margin:10px 0 6px;
+}
+.hope_movie .want{
+    font-size:14px;
+    color:rgb(255, 180, 0);
+}
+.hope_movie_top2_3{
+    display: flex;
+    margin-top:18px;
+}
+.hope_movie_top2_3>a{
+    border:1px solid rgb(239, 239, 239);
+    padding-bottom:10px;
+}
+.hope_movie_top2_3>a:first-child{
+    margin-right:18px;
+}
+.hope_movie_top2_3>a>h3{
+    margin:10px 0 5px 10px;
+}
+.hope_movie_top2_3>a>span{
+    margin-left:10px;
+}
+.hope_movie_top2_3>a>i{
+    display: inline-block;
+    background:rgb(255, 180, 0);
+    width:20px;
+    height:20px;
+    color:white;
+    font-size:18px;
+    position:absolute;
+    left:0;
+    top: 0;
+}
+.hope_movie_top1:hover,.hope_movie_top2_3>a:hover{
+    background:rgb(253, 253, 253);
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+.hope_movie_list{
+    margin-top:20px;
+}
+.hope_movie_list>li:first-child>a>div>span,.hope_movie_list>li:nth-child(2)>a>div>span{
+    color: rgb(153,153,153);
+}
+.hope_movie_list>li>a>span{
+    color:rgb(255, 180, 0);
+}
+#hope_movie_top1>a>img{
+    width: 140px;
+    height: 194px;
+}
+#hope_movie_top2_3>a>img{
+    width: 170px;
+    height: 118px;
+    
+}
+/* TOP 100 */
+.top_100{
+    margin-top:82px;
+}
+.top_100>div>a>span,.top_100>ul>li:first-child>a>div>span,.top_100>ul>li:nth-child(2)>a>div>span,.top_100>ul>li>a>span{
+    color:rgb(255, 180, 0);
+}
+.hope_movie_h>a::after{
+    background-image: url("../img/icon14.png");
+}
+/* footer */
+footer{
+    width:100%;
+    margin-top:100px;
+    height:150px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgb(38, 36, 38);
+    text-align:center;
+    font-size:14px;
+    color:rgb(102, 102, 102);
+}
+footer>p{
+    margin:5px 0;
+}
+.cat>a>img{
+    width:72px;
+    height: 121px;
+    right: 0;
+    position:fixed;
+    animation: cat linear 3s infinite;
+
+}
+@keyframes cat{
+    0%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 200px;
+    }
+}

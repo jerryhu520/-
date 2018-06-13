@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>注册 | 猫眼电影</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/register.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../../index.html">
+                <img src="../../img/logo.png" alt="" />
+            </a>
+        </div>
+    </header>
+    <form action="/users/reg" method="POST" id="form">
+        <div class="text mobile">
+            <label for="mobile">手机号</label>
+            <input type="text" name="user_phone" id="mobile" maxlength="11">
+            <span>注册成功后，全美团通用<span></span></span>
+            <span id="promit"></span>
+        </div>
+        <div class="free">
+            <input type="submit" name="" value="免费获取动态密码">
+        </div>
+        <div class="text">
+            <label for="message">短信动态码</label>
+            <input type="text" name="" id="message" maxlength="6">
+            <span id="promit"></span>
+        </div>
+        <div class="text pwd">
+            <label for="pwd">创建密码</label>
+            <input type="password" id="pwd" name="user_pwd" maxlength="16" />
+            <span id="promit"></span>
+            <p id="pwd_color">
+                <span>弱</span>
+                <span>中</span>
+                <span>强</span>
+            </p>
+        </div>
+        <div class="text pwd_2">
+            <label for="pwd_2">确认密码</label>
+            <input type="password" id="pwd_2" maxlength="16" />
+            <span id="promit"></span>
+        </div>
+        <div class="agree">
+            <input type="submit" id="sub" value="同意以下协议并注册">
+            <i></i>
+            <a id="login" href="../login/login.html">返回登录</a>
+            <p>
+                <a href="">《美团网用户协议》</a>
+            </p>
+        </div>
+    </form>
+    <footer>
+        <div>
+            <p>&copy;
+                <a href="">meituan.com</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">京ICP证070791号</a>&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010502025545号</p>
+        </div>
+    </footer>
+    <div class="cat">
+        <a href="#">
+            <img src="../../img/cat.png" alt="">
+        </a>
+    </div>
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="./register.js"></script>
+</body>
+</body>
+
+</html>
